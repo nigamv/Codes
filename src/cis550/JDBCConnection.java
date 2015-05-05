@@ -7,7 +7,7 @@ import cis550.controller.DBLayer;
 import cis550.controller.FunWithDB;
 import cis550.model.Business;
 
-public class JDBCConnection {
+ public class JDBCConnection {
    
    static final String JDBC_DRIVER = "oracle.jdbc.driver.OracleDriver";  
    static final String DB_URL = "jdbc:oracle:thin:@//cis550hw1.cfoish237b6z.us-west-2.rds.amazonaws.com:1521/IMDB";
