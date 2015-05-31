@@ -12,14 +12,14 @@ import java.util.Set;
  * after the call is completed. 
  * 
  * Relatives can be called in any number and each relative is called only once. 
- * Thus each realtive has a unique call duration.
+ * Thus each relatives call  has a unique call duration.
  */
 public class MinimumRecharge {
 	public static void main (String [] args){
-		int [] call_details = new int [5];          // Decalring an empty array of size 5
-		Random rn = new Random();                   // Creating an object of Random
+		int [] call_details = new int [5];                             // Decalring an empty array of size 5
+		Random rn = new Random();                                      // Creating an object of Random
 		
-		for (int i=0; i<call_details.length;i++)    // Randomly generating recharge minutes for call duration
+		for (int i=0; i<call_details.length;i++)                      // Randomly generating recharge minutes for call duration
 			call_details[i]= rn.nextInt(call_details.length);         //  Index of the array represents call duration to the relative 
 		
 		System.out.println("Details of call duration and recharge are");
