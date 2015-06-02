@@ -1,5 +1,9 @@
 package tree;
 
+/* This class shows implementation of bradth first search, depth first search 
+ * and iterative deepening search implemented successfully on a binary search 
+ * tree. 
+ */
 import java.util.ArrayList;
 
 public class BinaryTree {
