@@ -1,13 +1,16 @@
 package tree;
 
-
+/*
+ * This class is used as a test case class for performing various
+ * test case scenarios. 
+ */
 public class BinaryTreeTest {
 	public static void main (String [] args)
 	{
 		Node root = new Node (10);
 		Node result = null;
 		BinaryTree tree = new BinaryTree();
-		tree.setRoot(root);
+		tree.add(10);
 		tree.add(5);
 		tree.add(15);
 		tree.add(7);
@@ -43,12 +46,15 @@ public class BinaryTreeTest {
 		
 		System.out.println("Pre Order Traversal");
 		bt1.preOrderTraversal();
+		System.out.println(" ");
 		
 		System.out.println("In Order Traversal:");
 		bt1.inOrderTraversal();
+		System.out.println(" ");
 		
 		System.out.println("Post Order Traversal");
 		bt1.postOrderTraversal();
+		System.out.println(" ");
 		
 		System.out.println("Depth between two elements:");
 		int count = bt1.depthBetweenTwoElements(16,10);
