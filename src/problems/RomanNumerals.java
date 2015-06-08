@@ -1,6 +1,8 @@
 package problems;
 import java.util.HashMap;
-
+/*
+ * This code converts any Roman number to the corresponding decimal number 
+ */
 
 public class RomanNumerals {
 	public static void main (String [] args)
