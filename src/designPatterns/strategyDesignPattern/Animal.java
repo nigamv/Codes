@@ -15,6 +15,9 @@ public class Animal {
 	private int weight;
 	private double height;
 	private String sound;
+	
+	protected Flys flyingType;
+	
 	public String getName() {
 		return name;
 	}
@@ -41,5 +44,13 @@ public class Animal {
 	}
 	public void setSound(String sound) {
 		this.sound = sound;
+	}
+	
+	public String getFlyingType(){
+		return flyingType.flys();
+	}
+	
+	public void setFlyingType(Flys flyingType){
+		this.flyingType = flyingType;
 	}
 }

@@ -6,7 +6,11 @@ public class Dog extends Animal{
 
 	public Dog(){
 		super();
+		// setting the sound of dog
 		setSound("bark");
+		
+		// setting the ability of the dog whether it can fly or not  
+		flyingType = new CantFly();
 	}
 	
 	public void digHole(){
