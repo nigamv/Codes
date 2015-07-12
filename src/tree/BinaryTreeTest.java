@@ -7,7 +7,7 @@ package tree;
 public class BinaryTreeTest {
 	public static void main (String [] args)
 	{
-		Node root = new Node (10);
+	//	Node root = new Node (10);
 		Node result = null;
 		BinaryTree tree = new BinaryTree();
 		tree.add(10);
@@ -19,7 +19,7 @@ public class BinaryTreeTest {
 		tree.add(16);
 		
 		System.out.println("Perform a breadth first search");
-		tree.breadthFirstSearch(16, root);
+		tree.breadthFirstSearch(16);
 		
 		System.out.println("Perform a depth first search");
 		result = tree.depthFirstSearchNode(7);

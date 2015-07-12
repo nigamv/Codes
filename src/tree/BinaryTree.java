@@ -98,25 +98,25 @@ public class BinaryTree {
 	 * 
 	 * @return			true/false value returned depending upon if element is found
 	 */
-	public boolean breadthFirstSearch(int data,Node root)
+	public boolean breadthFirstSearch(int data)
 	{
 		// A list keeping track of nodes to visit at each depth
 		ArrayList<Node> nodesToVisit = new ArrayList<Node>();
 		
 		// A list keeping track of visited nodes
-		ArrayList<Node> nodesVisited = new ArrayList<Node>();
+	//	ArrayList<Node> nodesVisited = new ArrayList<Node>();
 		
 		// Add an unvisited node at current depth to the list
 		nodesToVisit.add(root);
 		
 		// Initialize the index
-		int index =0;
+		// int index =0;
 		
-		while (nodesToVisit.size()!= nodesVisited.size())
+		while (!nodesToVisit.isEmpty())
 		{
 			// get the current node to be visited
-			Node current = nodesToVisit.get(index);
-			
+			Node current = nodesToVisit.get(0);
+			nodesToVisit.remove(0);
 			// check if the current node is the given node
 			if (verify(data,current))
 			{
@@ -125,10 +125,10 @@ public class BinaryTree {
 			}
 			
 			// add node to the visited node list 
-			nodesVisited.add(current);
+		//	nodesVisited.add(current);
 			
 			// increment the index  
-			index++;
+		//	index++;
 			
 			// add the left node of the current node to nodesToVisit list if not already added
 			if (current.left!=null)
@@ -154,8 +154,11 @@ public class BinaryTree {
 	{
 		System.out.println("Data to search is"+data);
 		System.out.println("Node data is"+root.data);
-		if (root.data == data)
+		if (root.data == data){
+			System.out.println("Data found");
 			return true;
+		}
+			
 		
 		return false;
 	}
