@@ -1,10 +1,10 @@
 # Codes
 
-This branch contains all the codes donw during the process of self learning various concepts of computer science. Please
+This branch contains all the codes done during the process of self learning various concepts of computer science. Please
 go through various directories to see implementations of binary search trees with different pre-order,post-order and 
 in-order traversal, along with, implementation of depthFirstSearch,breadthFirstSearch and iterative deepening search 
 
-Folder Problems: contains solutions of various interesting problems which i came across along with their explaination 
+Folder Problems: contains solutions of various interesting problems which i came across while preparing along with their explanations.  
 
 Folder LinkedList: Contains implementation of linked lists and basic functions 
 
